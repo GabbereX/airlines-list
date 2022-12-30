@@ -1,0 +1,13 @@
+@mixin addFont($nameFontFamily, $typeFont, $pathToWoff, $fw, $fs) {
+  @font-face {
+    font-family: $nameFontFamily;
+    src: local($nameFontFamily), local('#{$nameFontFamily}#{$typeFont}'),
+      local('#{$nameFontFamily}-#{$typeFont}'),
+      local('#{$nameFontFamily} #{$typeFont}'),
+      url('../../../assets/fonts/#{$pathToWoff}.woff2') format('woff2'),
+      url('../../../assets/fonts/#{$pathToWoff}.woff') format('woff');
+    font-weight: $fw;
+    font-style: $fs;
+    font-display: swap;
+  }
+}

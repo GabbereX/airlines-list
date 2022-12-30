@@ -1,0 +1,62 @@
+.d-flex {
+	display: flex;
+}
+
+.flex-justify-center {
+	justify-content: center;
+}
+
+.flex-justify-space-between {
+	justify-content: space-between;
+}
+
+.flex-align-center {
+	align-items: center;
+}
+
+.bg-white {
+	background: var(--color-white);
+}
+
+.shadow-container {
+	box-shadow: var(--shadow-container);
+}
+
+.border-radius {
+	border-radius: var(--border-radius-6);
+}
+
+.full-width {
+	width: 100%;
+}
+
+.title-3 {
+	padding-top: 3px;
+	display: inline;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.button-text {
+	padding-top: 4px;
+}
+
+.option-text {
+	padding-top: 2px;
+}
+
+.pt-12 {
+	padding-top: 12px;
+}
+
+.mr-12 {
+	margin-right: 12px;
+}
+
+.pb-30 {
+	padding-bottom: 30px;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}

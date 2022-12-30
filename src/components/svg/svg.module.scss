@@ -1,0 +1,11 @@
+.logo {
+	border-radius: 50%;
+	box-shadow: var(--shadow-logo);
+	transform: rotate(15deg);
+
+	transition: transform var(--transition-normal) ease;
+
+	&:hover {
+		transform: rotate(0);
+	}
+}

@@ -1,0 +1,10 @@
+.filter {
+	margin-right: 20px;
+	padding: 20px 15px;
+	min-width: var(--filter-width);
+	max-width: var(--filter-width);
+
+	&_currency {
+		width: calc(100% + 2px);
+	}
+}

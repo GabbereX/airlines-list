@@ -1,0 +1,43 @@
+.button {
+	&_blue {
+		padding: 10px 10px;
+		color: var(--color-blue-400);
+		font-weight: 700;
+		border: 1px solid var(--color-gray-300);
+
+		transition-property: background, border, color, z-index;
+		transition-duration: var(--transition-normal);
+		transition-timing-function: ease;
+
+		&:hover:not(.active_blue) {
+			background: var(--color-blue-100);
+			border: 1px solid var(--color-blue-400);
+			z-index: 1;
+		}
+
+		&:nth-child(2) {
+			transform: translateX(-1px);
+		}
+
+		&:nth-child(3) {
+			transform: translateX(-2px);
+		}
+
+		&:first-child {
+			border-bottom-left-radius: var(--border-radius-6);
+			border-top-left-radius: var(--border-radius-6);
+		}
+
+		&:last-child {
+			border-bottom-right-radius: var(--border-radius-6);
+			border-top-right-radius: var(--border-radius-6);
+		}
+	}
+}
+
+.active_blue {
+	color: var(--color-white);
+	background: var(--color-blue-400);
+	border: 1px solid var(--color-blue-400);
+	z-index: 2;
+}

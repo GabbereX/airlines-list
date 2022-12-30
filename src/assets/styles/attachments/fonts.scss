@@ -1,0 +1,13 @@
+@include addFont(Mail Sans Roman, Light, mailsansroman-light, 300, normal);
+@include addFont(Mail Sans Roman, Regular, mailsansroman-regular, 400, normal);
+@include addFont(Mail Sans Roman, Bold, mailsansroman-bold, 700, normal);
+
+html {
+  font-family: 'Mail Sans Roman', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: var(--color-gray-400);
+}
+
+button, input {
+  font: inherit;
+}

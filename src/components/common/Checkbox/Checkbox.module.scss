@@ -1,0 +1,77 @@
+.checkbox {
+	position: relative;
+	padding: 10px 20px;
+	margin: 0 -15px;
+
+	transition-property: background;
+	transition-duration: var(--transition-normal);
+	transition-timing-function: ease;
+
+	&_button {
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		padding-top: 3px;
+
+		color: var(--color-blue-400);
+		font-size: 11px;
+		text-transform: uppercase;
+		font-weight: 700;
+
+		opacity: 0;
+
+		transform: translateY(-50%);
+
+		transition-property: opacity, color;
+		transition-duration: var(--transition-normal);
+		transition-timing-function: ease;
+
+		&:hover {
+			color: var(--color-orange-400);
+		}
+	}
+
+	&:hover {
+		background: var(--color-blue-100);
+	}
+
+	&:hover &_button {
+		opacity: 1;
+	}
+
+	& input {
+		position: relative;
+		width: 20px;
+		height: 20px;
+
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-o-appearance: none;
+		outline: none;
+		content: none;
+
+		border: 1px solid var(--color-gray-300);
+		border-radius: var(--border-radius-4);
+
+		transition: border-color var(--transition-normal) ease;
+
+		&:before {
+			content: url(./assets/check-svgrepo-com.svg);
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			transition: opacity var(--transition-normal) ease;
+		}
+
+		&:checked {
+			border-color: var(--color-blue-400);
+			&:before {
+				opacity: 1;
+			}
+		}
+	}
+}
