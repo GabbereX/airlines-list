@@ -33,6 +33,17 @@
 			border-top-right-radius: var(--border-radius-6);
 		}
 	}
+
+	&_orange {
+		padding: 5px;
+
+		color: var(--color-white);
+		font-size: 16px;
+		white-space: pre-line;
+
+		background: var(--color-orange-400);
+		border-radius: var(--border-radius-4);
+	}
 }
 
 .active_blue {

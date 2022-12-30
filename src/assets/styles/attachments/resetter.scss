@@ -161,6 +161,7 @@ audio:not([controls]) {
 	height: 0;
 }
 img {
+	display: block;
 	border: 0;
 }
 svg:not(:root) {

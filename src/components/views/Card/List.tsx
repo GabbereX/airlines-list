@@ -2,11 +2,19 @@ import React, { FC } from 'react'
 
 import { Item } from './Item'
 
-export const List: FC = () => {
+import { IListProps } from './Card.types'
+
+export const List: FC<IListProps> = ({ dataList }) => {
 	return (
-    <div className='full-width'>
-      List
-      <Item />
-    </div>
+    <ul className='full-width'>
+	    {
+		    dataList.map(dataItem =>
+			    <Item
+				    key={ dataItem.id }
+				    dataItem={ dataItem }
+			    />)
+	    }
+
+    </ul>
 	)
 }

@@ -28,7 +28,6 @@ export const Checkbox: FC<ICheckboxProps> = ({ label, checked, value, onChange }
 						Только
 					</button>
 			}
-
     </li>
 	)
 }

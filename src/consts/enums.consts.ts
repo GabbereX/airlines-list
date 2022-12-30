@@ -5,9 +5,21 @@ export const enum Currencies {
 }
 
 export const enum TransferCount {
-	ALL = 'all',
-	NONE = 'none',
-	'ONE_TRANSFER' = 'one_transfer',
-	'TWO_TRANSFER' = 'two_transfer',
-	'THREE_TRANSFER' = 'three_transfer',
+	ALL = -1,
+	NONE = 0,
+	'ONE_TRANSFER' = 1,
+	'TWO_TRANSFER' = 2,
+	'THREE_TRANSFER' = 3,
+}
+
+export const enum Carrier {
+	TK = 'TK',
+	SU = 'SU',
+	BA = 'BA',
+	S7 = 'S7'
+}
+
+export const enum ButtonStyle {
+	BLUE = 'blue',
+	ORANGE = 'orange'
 }

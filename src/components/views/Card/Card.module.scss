@@ -1,0 +1,99 @@
+.card {
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	&_left {
+		padding: 20px;
+		min-width: 200px;
+		max-width: 200px;
+
+		border-right: 1px solid var(--color-gray-100);
+
+		& img {
+			margin: 0 auto 15px auto;
+		}
+
+		& button {
+			transition-property: background, transform;
+			transition-duration: var(--transition-normal);
+			transition-timing-function: ease;
+
+			&:hover {
+				background: var(--color-blue-400);
+			}
+
+			&:active {
+				transform: scale(0.98, 0.98);
+			}
+		}
+	}
+
+	&_right {
+		padding: 25px 30px;
+
+		&_top {
+			margin-bottom: 10px;
+
+			& time {
+				font-size: 30px;
+				line-height: initial;
+
+				&:first-child {
+					margin-right: 20px;
+				}
+
+				&:last-child {
+					margin-left: 20px;
+				}
+			}
+
+			& div {
+				position: relative;
+				flex-grow: 1;
+
+				text-align: center;
+				text-transform: uppercase;
+				color: var(--color-gray-360);
+				font-weight: 700;
+				font-size: 10px;
+
+				&:before {
+					content: '';
+					position: absolute;
+					left: 0;
+					bottom: 12px;
+					height: 1px;
+					width: 100%;
+					background: var(--color-gray-340);
+				}
+
+				&:after {
+					content: url(./assets/airplane.svg);
+					position: absolute;
+					right: 1px;
+					bottom: 8px;
+					height: 11px;
+					width: 11px;
+					transform: rotate(45deg);
+					background: var(--color-white);
+				}
+			}
+		}
+
+		&_bottom {
+			& > div {
+				span {
+					display: inline-block;
+					margin-bottom: 3px;
+					font-weight: 700;
+				}
+
+				time {
+					display: block;
+					color: var(--color-gray-360);
+				}
+			}
+		}
+	}
+}

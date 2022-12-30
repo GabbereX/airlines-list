@@ -1,7 +1,8 @@
-import { Currencies } from '../../../consts/enums.consts'
+import { ButtonStyle } from '../../../consts/enums.consts'
 
 export interface IButtonProps {
-	buttonText: Currencies
-	currency: Currencies
-	onClick: (value: Currencies) => void
+	buttonText: string
+	currency?: string
+	onClick: (value: string) => void
+	buttonStyle?: ButtonStyle
 }
