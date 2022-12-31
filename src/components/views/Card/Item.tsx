@@ -39,11 +39,8 @@ export const Item: FC<IItemProps> = ({ dataItem }) => {
 		const weekday = date.toLocaleString('ru', { weekday: 'short' })
 		const formattedWeekday =  weekday[0].toUpperCase() + weekday.slice(1)
 
-
 		return `${ day } ${ month } ${ year }, ${ formattedWeekday }`
 	}
-
-	console.log(formattedDate(departure_date))
 
 	return (
 		<li className={ cn(styles.card, 'd-flex bg-white shadow-container border-radius') }>

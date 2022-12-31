@@ -12,8 +12,6 @@ export const Content: FC = () => {
 	const initialData = api.tickets.map(item => { return { ...item, id: generateId() }})
 	const [data, setData] = useState<IData[]>(initialData)
 
-	console.log(data)
-
 	return (
     <div className='d-flex'>
       <Filter initialData={ initialData } setData={ setData } />
