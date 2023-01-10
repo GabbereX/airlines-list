@@ -47,6 +47,8 @@
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-o-appearance: none;
+		//clip: rect(0px, 0px, 0px, 0px);
+
 		outline: none;
 		content: none;
 
@@ -54,6 +56,15 @@
 		border-radius: var(--border-radius-4);
 
 		transition: border-color var(--transition-normal) ease;
+
+		&::-ms-check {
+			//clip: rect(0px, 0px, 0px, 0px)
+			outline: none;
+			content: none;
+
+			border: 1px solid var(--color-gray-300);
+			border-radius: var(--border-radius-4);
+		}
 
 		&:before {
 			content: url(./assets/check-svgrepo-com.svg);
@@ -73,5 +84,9 @@
 				opacity: 1;
 			}
 		}
+
+		//&::-ms-check {
+		//	z-index: -100;
+		//}
 	}
 }
